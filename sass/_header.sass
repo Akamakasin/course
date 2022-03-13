@@ -1,0 +1,53 @@
+.header
+    padding: 16px 0
+    &__devider
+        margin-left: 32px
+    &-wrap
+        display: flex
+    &__box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+    &__block
+        display: flex
+    &__info
+        display: flex
+        align-items: center
+        margin-left: 32px    
+    &-cart
+        margin-right: 4px
+    .login-margin
+        margin: 0
+    .cart-margin //Кнопка по высоте не такая как в макете, не могу понять почему 
+        //моя кнопка больше. И иконку я так и не понял как сделать другую при
+        //нажатии и в активном состоянии.
+        margin-left: 16px
+        padding: 8px
+        font-weight: 600
+        font-size: 15px
+        line-height: 14px
+        color: $red
+        cursor: pointer
+        border-radius: 4px
+        background-color: $white
+        border: 1px solid rgba(247, 56, 89, 0.3)
+        transition: all 0.2s
+        &:hover
+            background-color: $red
+            color: $white
+            transition: all 0.2s
+        &:active
+            background-color: $red-active
+            color: $white
+            transition: all 0.2s
+    &-text
+        margin-left: 4px
+        font-weight: 600
+        font-size: 15px
+        line-height: 20px
+        color: $text-black
+            
+                
+                    
+                
