@@ -1,6 +1,5 @@
 .navbar
     padding-top: 20px
-    margin-bottom: 20px
     background-color: #282828
     &__wrap
         display: flex
@@ -20,8 +19,19 @@
         line-height: 16px
         color: $white
     &__form
-        // Не могу совладать с формой, вклеилась в одно место и не двигается, а если двигается, то двигает всего родителя
+        background-color: $black
+        font-weight: 600
+        border-radius: 4px
+        border: 1px solid $white
     &__input
+        padding: 10px 0px 10px 8px
+        background-color: $black
+        font-size: 15px
+        line-height: 20px
+        color: $text-gray
+    &__btn
+        padding: 10px 8px
+        background-color: $white
 @media (max-width: 340px)
     .navbar
         width: 100%
