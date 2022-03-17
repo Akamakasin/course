@@ -1,13 +1,14 @@
 .navbar
-    padding-top: 20px
     background-color: #282828
     &__wrap
         display: flex
         justify-content: space-between
+        align-items: center
     &__list
         display: flex
     &__item
         margin-right: 32px
+        padding-top: 20px
         padding-bottom: 20px
         &:first-child 
             border-bottom: 4px solid $white
@@ -24,14 +25,25 @@
         border-radius: 4px
         border: 1px solid $white
     &__input
-        padding: 10px 0px 10px 8px
+        padding-left: 8px
         background-color: $black
         font-size: 15px
         line-height: 20px
         color: $text-gray
     &__btn
-        padding: 10px 8px
+        padding: 12px 12px
         background-color: $white
+
+@media (max-width: 768px)
+    .navbar
+        padding: 5px 0
+        &__list
+            display: none
+        &__form
+            display: flex
+            justify-content: space-between
+            width: 100%            
+        
 @media (max-width: 340px)
     .navbar
         width: 100%

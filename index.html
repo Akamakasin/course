@@ -12,10 +12,20 @@
     
     <div class="header">
         <div class="container">
-            <a href="" class="header__menu">
-                <span></span>
-            </a>
             <div class="header-wrap">
+                <div class="menu-mobile">
+                    <a href="#" class="menu__btn">
+                        <span class="burger"></span>
+                    </a>
+                    <!-- <ul class="menu__box">
+                      <li><a class="menu__item" href="#">Преимущества</a></li>
+                            <li><a class="menu__item" href="#">Товары</a></li>
+                            <li><a class="menu__item" href="#">Статьи</a></li>
+                            <li><a class="menu__item" href="#">Партнеры</a></li>
+                            <li><a class="menu__item" href="#">Галерея</a></li>
+                            <li><a class="menu__item" href="#">Оптовикам</a></li>
+                    </ul> -->
+                </div>
                 <a href="#" class="logo">
                     <img src="/img/logo.svg" alt="logo">
                 </a>
@@ -126,10 +136,8 @@
     <section class="slider">
         <div class="wrapper swiper">
             <div class="slider__wrap swiper-wrapper">
-                <div class="slider__slide-one swiper-slide">
-                    <div class="slider__background">
-                        <img src="/img/slider__img.jpg" alt="slider__img">
-                    </div>
+                <div class="swiper-slide">
+                    <img src="/img/slider__img.jpg" alt="slider__img" class="slider-bg">
                     <div class="container">
                         <div class="slider__content">
                             <h1 class="slider__title">
@@ -156,111 +164,97 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="slider__slide-two swiper-slide">
-                    <div class="slider__background">
-                        <img src="/img/slider__img.jpg" alt="slider__img" style="width: 100%;">
-                        <div class="container">
-                            <div class="slider__content">
-                                <h1 class="slider__title">
-                                    Greentest ECO 5
-                                </h1>
-                                <p class="slider__text">
-                                    Greentest ECO 5 – это 3-в-1! Проверяйте продукты <br> 
-                                    на нитраты, измеряйте жёсткость воды и уровень <br> 
-                                    радиации в вашей квартире или загородном доме.
+                <div class="swiper-slide">
+                    <img src="/img/slider__img.jpg" alt="slider__img" class="slider-bg">
+                    <div class="container">
+                        <div class="slider__content">
+                            <h1 class="slider__title">
+                                Greentest ECO 5
+                            </h1>
+                            <p class="slider__text">
+                                Greentest ECO 5 – это 3-в-1! Проверяйте продукты <br> 
+                                на нитраты, измеряйте жёсткость воды и уровень <br> 
+                                радиации в вашей квартире или загородном доме.
+                            </p>
+                            <div class="slider__price">
+                                <p class="slider__oldprice">
+                                    11999
+                                    <img src="/img/oldprice.svg" alt="oldprice">
                                 </p>
-                                <div class="slider__price">
-                                    <p class="slider__oldprice">
-                                        11999
-                                        <img src="/img/oldprice.svg" alt="oldprice">
-                                    </p>
-                                    <p class="slider__newprice">
-                                        8900
-                                        <img src="/img/newprice.svg" alt="newprice">
-                                    </p>
-                                </div>
-                                <button class="btn">
-                                    Купить
-                                </button>
+                                <p class="slider__newprice">
+                                    8900
+                                    <img src="/img/newprice.svg" alt="newprice">
+                                </p>
                             </div>
+                            <button class="btn">
+                                Купить
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="slider__slide-three swiper-slide">
-                    <div class="slider__background">
-                        <img src="/img/slider__img.jpg" alt="slider__img" style="width: 100%;">
-                        <div class="container">
-                            <div class="slider__content">
-                                <h1 class="slider__title">
-                                    Greentest ECO 5
-                                </h1>
-                                <p class="slider__text">
-                                    Greentest ECO 5 – это 3-в-1! Проверяйте продукты <br> 
-                                    на нитраты, измеряйте жёсткость воды и уровень <br> 
-                                    радиации в вашей квартире или загородном доме.
+                <div class="swiper-slide">
+                    <img src="/img/slider__img.jpg" alt="slider__img" class="slider-bg">
+                    <div class="container">
+                        <div class="slider__content">
+                            <h1 class="slider__title">
+                                Greentest ECO 5
+                            </h1>
+                            <p class="slider__text">
+                                Greentest ECO 5 – это 3-в-1! Проверяйте продукты <br> 
+                                на нитраты, измеряйте жёсткость воды и уровень <br> 
+                                радиации в вашей квартире или загородном доме.
+                            </p>
+                            <div class="slider__price">
+                                <p class="slider__oldprice">
+                                    11999
+                                    <img src="/img/oldprice.svg" alt="oldprice">
                                 </p>
-                                <div class="slider__price">
-                                    <p class="slider__oldprice">
-                                        11999
-                                        <img src="/img/oldprice.svg" alt="oldprice">
-                                    </p>
-                                    <p class="slider__newprice">
-                                        8900
-                                        <img src="/img/newprice.svg" alt="newprice">
-                                    </p>
-                                </div>
-                                <button class="btn">
-                                    Купить
-                                </button>
+                                <p class="slider__newprice">
+                                    8900
+                                    <img src="/img/newprice.svg" alt="newprice">
+                                </p>
                             </div>
+                            <button class="btn">
+                                Купить
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="slider__slide-four swiper-slide">
-                    <div class="slider__background">
-                        <img src="/img/slider__img.jpg" alt="slider__img" style="width: 100%;">
-                        <div class="container">
-                            <div class="slider__content">
-                                <h1 class="slider__title">
-                                    Greentest ECO 5
-                                </h1>
-                                <p class="slider__text">
-                                    Greentest ECO 5 – это 3-в-1! Проверяйте продукты <br> 
-                                    на нитраты, измеряйте жёсткость воды и уровень <br> 
-                                    радиации в вашей квартире или загородном доме.
+                <div class="swiper-slide">
+                    <img src="/img/slider__img.jpg" alt="slider__img" class="slider-bg">
+                    <div class="container">
+                        <div class="slider__content">
+                            <h1 class="slider__title">
+                                Greentest ECO 5
+                            </h1>
+                            <p class="slider__text">
+                                Greentest ECO 5 – это 3-в-1! Проверяйте продукты <br> 
+                                на нитраты, измеряйте жёсткость воды и уровень <br> 
+                                радиации в вашей квартире или загородном доме.
+                            </p>
+                            <div class="slider__price">
+                                <p class="slider__oldprice">
+                                    11999
+                                    <img src="/img/oldprice.svg" alt="oldprice">
                                 </p>
-                                <div class="slider__price">
-                                    <p class="slider__oldprice">
-                                        11999
-                                        <img src="/img/oldprice.svg" alt="oldprice">
-                                    </p>
-                                    <p class="slider__newprice">
-                                        8900
-                                        <img src="/img/newprice.svg" alt="newprice">
-                                    </p>
-                                </div>
-                                <button class="btn">
-                                    Купить
-                                </button>
+                                <p class="slider__newprice">
+                                    8900
+                                    <img src="/img/newprice.svg" alt="newprice">
+                                </p>
                             </div>
+                            <button class="btn">
+                                Купить
+                            </button>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
-        </div>
-        <div class="container">
             <div class="slider__navigation">
-                <div class="slider-prev">
-                    <div class="swiper-button-prev"></div>
-                </div>
-                <div class="slider__pagination">
-                    <div class="swiper-pagination"></div>
-                </div>
-                <div class="slider-next">
-                    <div class="swiper-button-next"></div>
-                </div> 
-            </div>     
-        </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>     
     </section>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="/js/slider.js"></script>

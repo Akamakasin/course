@@ -61,6 +61,7 @@
             transition: all 0.2s
         .cart__icon
             margin-right: 4px
+    .city-text,
     .phone-text,
     .email-text,
     .login-text,
@@ -78,11 +79,13 @@
         .login-text,
         .cart-text
             display: none
-        .logo
-            border: none
         .cart
             margin-bottom: 4px
             border: none
+@media (max-width: 567px)
+    .header
+        &__info
+            display: none
 @media (max-width: 340px)
     .header
         .logo
