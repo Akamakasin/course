@@ -40,19 +40,6 @@
   display: flex;
   padding: 16px 0; }
 
-.header___menu {
-  position: relative;
-  display: block;
-  width: 284px;
-  height: 274px;
-  background-color: #000000; }
-  .header___menu span {
-    position: absolute;
-    top: 50%;
-    width: 18px;
-    height: 2px;
-    background-color: #000000; }
-
 .header__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,6 +120,10 @@
   color: #222222; }
 
 @media (max-width: 768px) {
+  .header .logo {
+    margin-left: 16px;
+    padding-right: 32px;
+    border-right: none; }
   .header .city-text,
   .header .phone-text,
   .header .email-text,
@@ -144,6 +135,10 @@
     border: none; } }
 
 @media (max-width: 567px) {
+  .header__box {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
   .header__info {
     display: none; } }
 
@@ -151,6 +146,9 @@
   .header .logo {
     padding-right: 45px;
     border: none; }
+  .header .logo > img {
+    width: 114px;
+    height: 24px; }
   .header__info {
     display: none; }
   .header__link {
@@ -433,4 +431,121 @@
         .header .menu-mobile .menu__btn .burger::after {
           -webkit-transform: translateY(12px);
                   transform: translateY(12px); } }
+
+@media (max-width: 340px) {
+  .header .menu-mobile {
+    width: 24px;
+    height: 24px; }
+    .header .menu-mobile .menu__btn {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px; }
+      .header .menu-mobile .menu__btn .burger {
+        width: 12px;
+        height: 2px; }
+        .header .menu-mobile .menu__btn .burger::after, .header .menu-mobile .menu__btn .burger::before {
+          width: 18px;
+          height: 2px;
+          margin-top: -1px; }
+        .header .menu-mobile .menu__btn .burger::before {
+          -webkit-transform: translateY(-5px);
+                  transform: translateY(-5px); }
+        .header .menu-mobile .menu__btn .burger::after {
+          -webkit-transform: translateY(5px);
+                  transform: translateY(5px); } }
+
+.dignity {
+  padding-top: 32px;
+  padding-bottom: 48px; }
+  .dignity__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .dignity__box {
+    padding: 16px; }
+  .dignity__img-shop, .dignity__img-delivery, .dignity__img-bank-card, .dignity__img-payment {
+    width: 232px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 2px solid #F73859; }
+  .dignity__text {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.01em; }
+
+@media (max-width: 1200px) {
+  .dignity {
+    display: none; } }
+
+.advantages {
+  padding-top: 40px;
+  padding-bottom: 56px; }
+  .advantages .title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    color: #222222; }
+  .advantages__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #7C7C7C; }
+  .advantages__wrap {
+    padding: 32px 0; }
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .advantages__item-text {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #222222; }
+  .advantages__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .advantages .box-padding {
+    padding: 24px 0; }
+  .advantages__desc {
+    padding: 32px; }
+  .advantages__caption {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+    color: #222222; }
+  .advantages .caption-margin {
+    margin-bottom: 12px; }
+  .advantages__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #7C7C7C; }
+  .advantages .text-margin {
+    margin-bottom: 12px; }
+
+@media (max-width: 1200px) {
+  .advantages {
+    display: none; } }
 /*# sourceMappingURL=style.css.map */

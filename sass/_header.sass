@@ -2,18 +2,6 @@
     &-wrap
         display: flex
         padding: 16px 0
-    &___menu
-        position: relative 
-        display: block
-        width: 284px
-        height: 274px
-        background-color: #000000
-        span
-            position: absolute
-            top: 50%
-            width: 18px
-            height: 2px
-            background-color: #000000
     &__box
         display: flex
         justify-content: space-between
@@ -73,6 +61,10 @@
         color: $text-black
 @media (max-width: 768px)
     .header
+        .logo
+            margin-left: 16px
+            padding-right: 32px
+            border-right: none
         .city-text,
         .phone-text,
         .email-text,
@@ -84,6 +76,8 @@
             border: none
 @media (max-width: 567px)
     .header
+        &__box
+            justify-content: flex-end
         &__info
             display: none
 @media (max-width: 340px)
@@ -91,6 +85,9 @@
         .logo
             padding-right: 45px
             border: none
+        .logo > img
+            width: 114px
+            height: 24px
         &__info
             display: none
         &__link
