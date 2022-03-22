@@ -23,7 +23,36 @@
         letter-spacing: -0.01em
 @media (max-width: 1200px)
     .dignity
-        display: none
+        &__box
+            width: 25%
+        &__img-shop,
+        &__img-delivery,
+        &__img-bank-card,
+        &__img-payment
+            width: 100%
+            margin: 0 auto
+@media (max-width: 768px)
+    .dignity
+        &__box
+            width: 25%
+        &__img-shop,
+        &__img-delivery,
+        &__img-bank-card,
+        &__img-payment
+            width: 100%
+            margin: 0 auto
+@media (max-width: 567px)
+    .dignity
+        &__wrap
+            flex-wrap: wrap
+        &__box
+            width: 50%
+        &__img-shop,
+        &__img-delivery,
+        &__img-bank-card,
+        &__img-payment
+            width: 100%
+            margin: 0 auto
 
 
        

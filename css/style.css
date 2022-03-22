@@ -14,6 +14,9 @@
   list-style: none;
   border: none; }
 
+body {
+  font-family: 'Open Sans'; }
+
 .container {
   max-width: 1228px;
   margin: auto; }
@@ -38,6 +41,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 16px 0; }
 
 .header__box {
@@ -47,18 +53,15 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%; }
 
 .header__info, .header__cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
 
 .header__link {
   margin-left: 32px; }
@@ -90,13 +93,16 @@
   border: 1px solid rgba(247, 56, 89, 0.3);
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
+  .header .cart-text {
+    color: #F73859; }
   .header .cart:hover {
     background-color: #F73859;
-    color: #ffffff;
     fill: #ffffff;
     stroke: #ffffff;
     -webkit-transition: all 0.2s;
     transition: all 0.2s; }
+    .header .cart:hover span {
+      color: #ffffff; }
     .header .cart:hover path {
       fill: #ffffff;
       stroke: #ffffff; }
@@ -120,10 +126,19 @@
   color: #222222; }
 
 @media (max-width: 768px) {
+  .header-wrap {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .header .logo {
     margin-left: 16px;
     padding-right: 32px;
     border-right: none; }
+  .header .logo > img {
+    width: 114px;
+    height: 24px; }
+  .header .login {
+    display: inline-block; }
   .header .city-text,
   .header .phone-text,
   .header .email-text,
@@ -131,10 +146,12 @@
   .header .cart-text {
     display: none; }
   .header .cart {
-    margin-bottom: 4px;
     border: none; } }
 
 @media (max-width: 567px) {
+  .header .logo > img {
+    width: 114px;
+    height: 24px; }
   .header__box {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -156,6 +173,10 @@
   .header__btn {
     width: 24px;
     height: 24px; }
+  .header__cart {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .header .login {
     margin: 0; }
   .header .login-text {
@@ -223,6 +244,8 @@
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
+      width: 100%; }
+    .navbar__input {
       width: 100%; } }
 
 @media (max-width: 340px) {
@@ -231,6 +254,8 @@
     .navbar__list {
       display: none; }
     .navbar__form {
+      width: 100%; }
+    .navbar__input {
       width: 100%; } }
 
 .slider.wrapper {
@@ -357,7 +382,7 @@
 
 @media (max-width: 340px) {
   .slider {
-    display: none; } }
+    display: 100%; } }
 
 .btn {
   padding: 8px 24px;
@@ -387,7 +412,7 @@
     border-radius: 50%; }
     .header .menu-mobile .menu__btn .burger {
       position: absolute;
-      top: 17px;
+      top: 10px;
       width: 12px;
       height: 2px;
       background-color: #000000; }
@@ -408,29 +433,19 @@
       .header .menu-mobile .menu__btn .burger::after {
         -webkit-transform: translateY(5px);
                 transform: translateY(5px); }
+  .header .menu-mobile .active .burger::after {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg); }
+  .header .menu-mobile .active .burger::before {
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+            transform: translate(-50%, -50%) rotate(-45deg); }
+
+.header .menu__box {
+  display: none; }
 
 @media (max-width: 768px) {
   .header .menu-mobile {
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin-right: 15px; }
-    .header .menu-mobile .menu__btn {
-      width: 100%;
-      height: 100%; }
-      .header .menu-mobile .menu__btn .burger {
-        width: 18px;
-        height: 5px; }
-        .header .menu-mobile .menu__btn .burger::after, .header .menu-mobile .menu__btn .burger::before {
-          width: 28px;
-          height: 5px;
-          margin-top: -3px; }
-        .header .menu-mobile .menu__btn .burger::before {
-          -webkit-transform: translateY(-12px);
-                  transform: translateY(-12px); }
-        .header .menu-mobile .menu__btn .burger::after {
-          -webkit-transform: translateY(12px);
-                  transform: translateY(12px); } }
+    display: block; } }
 
 @media (max-width: 340px) {
   .header .menu-mobile {
@@ -480,12 +495,33 @@
     letter-spacing: -0.01em; }
 
 @media (max-width: 1200px) {
-  .dignity {
-    display: none; } }
+  .dignity__box {
+    width: 25%; }
+  .dignity__img-shop, .dignity__img-delivery, .dignity__img-bank-card, .dignity__img-payment {
+    width: 100%;
+    margin: 0 auto; } }
+
+@media (max-width: 768px) {
+  .dignity__box {
+    width: 25%; }
+  .dignity__img-shop, .dignity__img-delivery, .dignity__img-bank-card, .dignity__img-payment {
+    width: 100%;
+    margin: 0 auto; } }
+
+@media (max-width: 567px) {
+  .dignity__wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .dignity__box {
+    width: 50%; }
+  .dignity__img-shop, .dignity__img-delivery, .dignity__img-bank-card, .dignity__img-payment {
+    width: 100%;
+    margin: 0 auto; } }
 
 .advantages {
   padding-top: 40px;
-  padding-bottom: 56px; }
+  padding-bottom: 56px;
+  background: #F9F9FB; }
   .advantages .title {
     margin-bottom: 16px;
     font-weight: 700;
@@ -546,6 +582,29 @@
     margin-bottom: 12px; }
 
 @media (max-width: 1200px) {
-  .advantages {
-    display: none; } }
+  .advantages__item {
+    width: 23%; }
+    .advantages__item img {
+      width: 100%; } }
+
+@media (max-width: 768px) {
+  .advantages__item {
+    width: 23%; }
+    .advantages__item img {
+      width: 100%; }
+  .advantages__box {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .advantages .box-padding {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+  .advantages__img {
+    width: 90%; }
+    .advantages__img img {
+      width: 100%; } }
 /*# sourceMappingURL=style.css.map */
