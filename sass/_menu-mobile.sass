@@ -6,6 +6,7 @@
             display: inline-block
             width: 24px
             height: 24px
+            top: 3px
             background-color: $white
             border-radius: 50%
             .burger
@@ -31,6 +32,8 @@
                     transform: translateY(-5px)
                 &::after
                     transform: translateY(5px)
+        .menu__box
+            margin-left: 16px
         .wrap-bottom
             margin-bottom: 129px
         .link-color
@@ -43,9 +46,11 @@
         .menu__close
             position: relative
             display: inline-block
+            top: 16px
+            left: 16px
+            margin-bottom: 30px
             width: 24px
             height: 24px
-            margin-bottom: 16px
             background-color: $white
             border-radius: 50%
             .burger
@@ -72,9 +77,12 @@
             display: none
         .popup__active
             display: block
-            position: absolute
-            transition: all 0.7s linear
+            position: fixed
+            z-index: 10
+            transition: all 0.5s linear
             width: 228px
+            top: 0
+            left: 0
             background: $gray-bg
     @media (max-width: 768px)
         .menu-mobile
