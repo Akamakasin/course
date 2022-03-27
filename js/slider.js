@@ -23,10 +23,8 @@ let menuClose = document.querySelector(".menu__close");
 
 menuBtn.addEventListener("click", function(){
     menuPopup.classList.add("popup__active");
-    menuBtn.classList.add("open__active");
 })
 
 menuClose.addEventListener("click", function(){
     menuPopup.classList.remove("popup__active");
-    menuBtn.classList.remove("open__active");
 })

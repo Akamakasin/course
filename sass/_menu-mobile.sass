@@ -25,7 +25,6 @@
                     background-color: $black-menu-btn
                 &::after,
                 &::before
-                    display: block
                     content: ""
                     width: 18px
                 &::before
@@ -42,7 +41,14 @@
             display: inline-block
             color: $text-black
         .menu__popup
-            display: none
+            position: fixed
+            width: 228px
+            top: 0
+            left: 0
+            transform: translateX(-105%)
+            transition: all 0.5s linear
+            z-index: 10
+            background: $gray-bg
         .menu__close
             position: relative
             display: inline-block
@@ -62,7 +68,6 @@
                     margin-top: -1px
                     height: 2px
                     background-color: $black-menu-btn
-                    display: block
                     content: ""
                     width: 18px
                 &::before
@@ -73,17 +78,18 @@
             padding: 12px 0
             border-top: 1px solid $grey-light
             border-bottom: 1px solid $grey-light
-        .open__active
-            display: none
+        .menu__contacts
+            margin-bottom: 24px
+        .contacts-margin
+            margin-bottom: 16px
         .popup__active
-            display: block
-            position: fixed
-            z-index: 10
-            transition: all 0.5s linear
-            width: 228px
             top: 0
             left: 0
+            z-index: 10
+            transform: translateX(0)
+            transition: all 0.5s linear
             background: $gray-bg
     @media (max-width: 768px)
         .menu-mobile
+            
             display: block
