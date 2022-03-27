@@ -1,13 +1,11 @@
 .header
     .menu-mobile
         display: none
-        width: 24px
-        height: 24px
-        .menu__btn
+        .menu__open
             position: relative
             display: inline-block
-            width: 100%
-            height: 100%
+            width: 24px
+            height: 24px
             background-color: $white
             border-radius: 50%
             .burger
@@ -33,34 +31,51 @@
                     transform: translateY(-5px)
                 &::after
                     transform: translateY(5px)
-        .active
+        .wrap-bottom
+            margin-bottom: 129px
+        .link-color
+            color: $text-black
+        .text-color
+            display: inline-block
+            color: $text-black
+        .menu__popup
+            display: none
+        .menu__close
+            position: relative
+            display: inline-block
+            width: 24px
+            height: 24px
+            margin-bottom: 16px
+            background-color: $white
+            border-radius: 50%
             .burger
-                &::after
-                    transform: translate(-50%, -50%) rotate(45deg)
+                &::after,
                 &::before
-                    transform: translate(-50%, -50%) rotate(-45deg)
-    .menu__box
-        display: none
+                    position: absolute
+                    top: 50%
+                    height: 50%
+                    margin-top: -1px
+                    height: 2px
+                    background-color: $black-menu-btn
+                    display: block
+                    content: ""
+                    width: 18px
+                &::before
+                    transform: rotate(40deg)
+                &::after
+                    transform: rotate(-40deg)
+        .menu__item
+            padding: 12px 0
+            border-top: 1px solid $grey-light
+            border-bottom: 1px solid $grey-light
+        .open__active
+            display: none
+        .popup__active
+            display: block
+            position: absolute
+            transition: all 0.7s linear
+            width: 228px
+            background: $gray-bg
     @media (max-width: 768px)
         .menu-mobile
             display: block
-    @media (max-width: 340px)
-        .menu-mobile
-            width: 24px
-            height: 24px
-            .menu__btn
-                width: 100%
-                height: 100%
-                margin-bottom: 10px
-                .burger
-                    width: 12px
-                    height: 2px
-                    &::after,
-                    &::before
-                        width: 18px
-                        height: 2px
-                        margin-top: -1px
-                    &::before
-                        transform: translateY(-5px)
-                    &::after
-                        transform: translateY(5px)

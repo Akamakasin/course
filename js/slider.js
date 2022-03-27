@@ -14,8 +14,19 @@ new Swiper('.wrapper',{
       },
 });
 
-let menuBtn = document.querySelector("menu__btn");
+let menuBtn = document.querySelector(".menu__open");
+
+let menuPopup = document.querySelector(".menu__popup");
+
+let menuClose = document.querySelector(".menu__close");
+
 
 menuBtn.addEventListener("click", function(){
-    menuBtn.classList.toggle("active");
+    menuPopup.classList.add("popup__active");
+    menuBtn.classList.add("open__active");
+})
+
+menuClose.addEventListener("click", function(){
+    menuPopup.classList.remove("popup__active");
+    menuBtn.classList.remove("open__active");
 })
