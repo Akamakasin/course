@@ -1,0 +1,57 @@
+.card-os
+    display: flex
+    .iphone
+        display: flex
+        align-items: center
+        margin-right: 8px
+        cursor: pointer
+        padding: 4px 4px 4px 4px
+        border: 1px solid $grey-light
+        border-radius: 3px
+        path
+            fill: $text-gray
+            stroke: $text-gray
+        &__text
+            margin-right: 2px
+            font-weight: 400
+            font-size: 11px
+            line-height: 16px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: $text-gray
+        &:hover
+            border: 1px solid $text-gray
+        &:active
+            border: 1px solid $blue-card__subtitle
+            span
+                color: $blue-card__subtitle
+            path
+                fill: $blue-card__subtitle
+                stroke: $blue-card__subtitle
+    .android
+        display: flex
+        align-items: center
+        cursor: pointer
+        padding: 4px 4px 4px 4px
+        border: 1px solid $grey-light
+        border-radius: 3px
+        &__text
+            margin-right: 2px
+            font-weight: 400
+            font-size: 11px
+            line-height: 16px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: $text-gray
+        &:hover
+            border: 1px solid $text-gray
+        &:active
+            border: 1px solid $blue-card__subtitle
+            span
+                color: $blue-card__subtitle
+            path
+                fill: $blue-card__subtitle
+.card-os_bottom
+    margin-bottom: 67px
+
+        
