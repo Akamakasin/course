@@ -1,0 +1,44 @@
+.card-color
+    display: flex
+    margin-top: 8px
+    margin-bottom: 36px
+    &__text
+        margin-right: 8px
+        font-weight: 400
+        font-size: 11px
+        line-height: 16px
+        letter-spacing: 0.05em
+        text-transform: uppercase
+        color: $text-gray
+    .card-radio__real
+        display: none
+    .card-radio__custom
+        position: relative
+        display: inline-block
+        width: 16px
+        height: 16px
+        border: 1px solid $grey-light
+        border-radius: 10px
+        vertical-align: text-top
+        margin-right: 4px
+        &::before
+            content: ''
+            display: inline-block
+            width: 8px
+            height: 8px
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%) scale(0)
+            background-image: url(../img/check.svg)
+            border-radius: 50%
+            transition: 0.2s ease-in
+    .radio--white
+        &::before
+            background-image: url(../img/check-black.svg)
+    .card-radio__real:checked + .card-radio__custom::before
+        transform: translate(-50%, -50%) scale(1)
+    .card-color_bottom
+        margin-bottom: 16px
+.card-color_big
+    margin-bottom: 16px

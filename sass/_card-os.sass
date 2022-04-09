@@ -1,17 +1,29 @@
 .card-os
     display: flex
-    .iphone
-        display: flex
-        align-items: center
+    .iphone__label
+        position: relative
+        display: inline-block
+        width: 70px
+        height: 24px
         margin-right: 8px
         cursor: pointer
         padding: 4px 4px 4px 4px
         border: 1px solid $grey-light
         border-radius: 3px
-        path
-            fill: $text-gray
-            stroke: $text-gray
-        &__text
+        vertical-align: text-top
+        &::before
+            content: ""
+            position: absolute
+            left: 50%
+            right: 50%
+            display: inline-block
+            transform: translate(-50%, -50%) scale(0)
+            transition: 0.2s ease-in
+
+        // path
+        //     fill: $text-gray
+        //     stroke: $text-gray
+        .iphone__text
             margin-right: 2px
             font-weight: 400
             font-size: 11px
@@ -28,6 +40,8 @@
             path
                 fill: $blue-card__subtitle
                 stroke: $blue-card__subtitle
+    .iphone-card__real
+        display: none
     .android
         display: flex
         align-items: center
