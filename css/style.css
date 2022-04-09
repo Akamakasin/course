@@ -844,6 +844,14 @@ body {
               transform: translate(-50%, -50%) scale(0);
       -webkit-transition: 0.2s ease-in;
       transition: 0.2s ease-in; }
+      .card-os .iphone__label::before span {
+        color: #367BF5; }
+      .card-os .iphone__label::before path {
+        fill: #367BF5;
+        stroke: #367BF5; }
+    .card-os .iphone__label path {
+      fill: #7C7C7C;
+      stroke: #7C7C7C; }
     .card-os .iphone__label .iphone__text {
       margin-right: 2px;
       font-weight: 400;
@@ -852,17 +860,12 @@ body {
       letter-spacing: 0.05em;
       text-transform: uppercase;
       color: #7C7C7C; }
-    .card-os .iphone__label:hover {
-      border: 1px solid #7C7C7C; }
-    .card-os .iphone__label:active {
-      border: 1px solid #367BF5; }
-      .card-os .iphone__label:active span {
-        color: #367BF5; }
-      .card-os .iphone__label:active path {
-        fill: #367BF5;
-        stroke: #367BF5; }
-  .card-os .iphone-card__real {
+  .card-os .card-os__real {
     display: none; }
+  .card-os .card-os__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .card-os .android {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -890,6 +893,9 @@ body {
         color: #367BF5; }
       .card-os .android:active path {
         fill: #367BF5; }
+  .card-os .card-os__real:checked + .card-os__box::before {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1); }
 
 .card-os_bottom {
   margin-bottom: 67px; }

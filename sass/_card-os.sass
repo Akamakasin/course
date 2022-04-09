@@ -19,10 +19,14 @@
             display: inline-block
             transform: translate(-50%, -50%) scale(0)
             transition: 0.2s ease-in
-
-        // path
-        //     fill: $text-gray
-        //     stroke: $text-gray
+            span
+                color: $blue-card__subtitle
+            path
+                fill: $blue-card__subtitle
+                stroke: $blue-card__subtitle
+        path
+            fill: $text-gray
+            stroke: $text-gray
         .iphone__text
             margin-right: 2px
             font-weight: 400
@@ -31,17 +35,14 @@
             letter-spacing: 0.05em
             text-transform: uppercase
             color: $text-gray
-        &:hover
-            border: 1px solid $text-gray
-        &:active
-            border: 1px solid $blue-card__subtitle
-            span
-                color: $blue-card__subtitle
-            path
-                fill: $blue-card__subtitle
-                stroke: $blue-card__subtitle
-    .iphone-card__real
+        // &:hover
+        //     border: 1px solid $text-gray
+        // &:active
+        //     border: 1px solid $blue-card__subtitle
+    .card-os__real
         display: none
+    .card-os__box
+        display: flex
     .android
         display: flex
         align-items: center
@@ -65,6 +66,8 @@
                 color: $blue-card__subtitle
             path
                 fill: $blue-card__subtitle
+    .card-os__real:checked + .card-os__box::before
+        transform: translate(-50%, -50%) scale(1)
 .card-os_bottom
     margin-bottom: 67px
 
