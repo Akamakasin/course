@@ -1,74 +1,36 @@
 .card-os
     display: flex
-    .iphone__label
-        position: relative
-        display: inline-block
-        width: 70px
-        height: 24px
-        margin-right: 8px
-        cursor: pointer
-        padding: 4px 4px 4px 4px
-        border: 1px solid $grey-light
-        border-radius: 3px
-        vertical-align: text-top
-        &::before
-            content: ""
-            position: absolute
-            left: 50%
-            right: 50%
-            display: inline-block
-            transform: translate(-50%, -50%) scale(0)
-            transition: 0.2s ease-in
-            span
-                color: $blue-card__subtitle
-            path
-                fill: $blue-card__subtitle
-                stroke: $blue-card__subtitle
-        path
-            fill: $text-gray
-            stroke: $text-gray
-        .iphone__text
-            margin-right: 2px
-            font-weight: 400
-            font-size: 11px
-            line-height: 16px
-            letter-spacing: 0.05em
-            text-transform: uppercase
-            color: $text-gray
-        // &:hover
-        //     border: 1px solid $text-gray
-        // &:active
-        //     border: 1px solid $blue-card__subtitle
-    .card-os__real
-        display: none
-    .card-os__box
-        display: flex
-    .android
+    &__box
         display: flex
         align-items: center
-        cursor: pointer
-        padding: 4px 4px 4px 4px
+        padding: 4px
         border: 1px solid $grey-light
         border-radius: 3px
-        &__text
-            margin-right: 2px
-            font-weight: 400
-            font-size: 11px
-            line-height: 16px
-            letter-spacing: 0.05em
-            text-transform: uppercase
-            color: $text-gray
         &:hover
             border: 1px solid $text-gray
-        &:active
-            border: 1px solid $blue-card__subtitle
-            span
+    &__text
+        margin-right: 2px
+        font-weight: 400
+        font-size: 11px
+        line-height: 16px
+        letter-spacing: 0.05em
+        text-transform: uppercase
+        color: $text-gray
+    label
+        display: inline-block
+        margin-right: 8px
+        cursor: pointer
+        path
+            fill: $text-gray
+    input
+        display: none
+        &:checked + div            
+            border-color: $blue-card__subtitle
+            .card-os__text
                 color: $blue-card__subtitle
             path
                 fill: $blue-card__subtitle
-    .card-os__real:checked + .card-os__box::before
-        transform: translate(-50%, -50%) scale(1)
-.card-os_bottom
+.card-os--bottom
     margin-bottom: 67px
 
         

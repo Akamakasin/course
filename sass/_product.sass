@@ -88,34 +88,39 @@
     .product
         &__box
             flex-direction: column
-        .card-small
-            justify-content: space-around
+        .card-small,
+        .card-middle
+            flex-direction: column
+            align-items: center
             width: 100%
         .card-small--max-width768px
             margin-bottom: 24px
-        .card-middle
-            justify-content: space-around
-            width: 100%
+        .card-small__image
+            width: 216px
         .card-middle--bottom
             margin-bottom: 24px
         .card-big__wrap
-            justify-content: normal
-            flex-wrap: wrap
+            flex-direction: column
+            align-items: center
         .card-big__inner
-            display: flex
-            justify-content: space-around
-        .card-big__image
-            margin: 0 auto
+            flex-direction: column
+            align-items: flex-start
         .card-big__text
-            width: 49%
+            margin-bottom: 24px
+            margin-right: 0
+        .card-big__box
+            align-items: flex-start
+            
 
 @media (max-width: 567px)
     .product
+        .card-middle__image
+            margin: 0
         .card-os
             flex-wrap: wrap
         .card-right
             justify-content: flex-end
-            .iphone--margin
+            .label--margin
                 margin: 0
             
 
