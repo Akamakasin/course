@@ -1,0 +1,34 @@
+.news
+    padding: 40px 0 56px 0
+    ul
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-column-gap: 24px
+        margin-bottom: 40px
+        p
+            margin-top: 8px
+    &__btn
+        display: flex
+        align-items: center
+        background-color: white
+        margin: 0 auto
+        cursor: pointer
+        path
+            fill: $text-gray
+        p
+            margin-left: 4px
+            font-weight: 600
+            font-size: 15px
+            line-height: 14px
+            color: $text-gray
+
+@media (max-width: 1200px)
+    .news
+        ul
+            grid-template-columns: repeat(2, 1fr)
+            justify-items: center
+
+@media (max-width: 567px)
+    .news
+        ul
+            grid-template-columns: repeat(1, 1fr)
