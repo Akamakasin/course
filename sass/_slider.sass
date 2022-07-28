@@ -33,9 +33,9 @@
         width: 100%
         bottom: 24px
         z-index: 1
-    .swiper-slide
+    .slider-slide
         padding: 56px 0 132px
-    .swiper-pagination
+    .slider-pagination
         position: static
         width: auto
         margin: 0px 16px
@@ -47,8 +47,8 @@
         &-active
             background-color: $red
             border: none
-    .swiper-button-next,
-    .swiper-button-prev
+    .slider-next,
+    .slider-prev
         position: static
         width: 40px
         height: 40px
@@ -63,12 +63,12 @@
             box-shadow: -8px 4px 8px rgba(0, 0, 0, 0.16)
         &:active
             box-shadow: -4px 2px 4px rgba(0, 0, 0, 0.24)
-    .swiper-button-next
+    .slider-next
         background-image: url("/img/next.svg")
-    .swiper-button-prev
+    .slider-prev
         background-image: url("/img/prev.svg")
-    .swiper-button-next::after,
-    .swiper-button-prev::after
+    .slider-prev::after,
+    .slider-next::after
         display: none
 
 @media (max-width: 1200px)

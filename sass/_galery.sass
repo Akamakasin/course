@@ -1,0 +1,49 @@
+.galery
+    padding: 40px 0 56px 0
+    &_tabs
+        display: flex
+        div
+            margin-right: 24px
+            padding-bottom: 6px
+            cursor: pointer
+            font-family: 'Open Sans'
+            font-style: normal
+            font-weight: 600
+            font-size: 15px
+            line-height: 16px
+            text-align: center
+            color: $blue-card__subtitle
+            &:last-child
+                margin-right: 0
+            &:hover
+                border-bottom: 2px solid $blue-card__subtitle
+            &:first-child
+                border-bottom: 2px solid $blue-card__subtitle
+    &_wrapper
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        margin-top: 24px
+    &_block
+        width: 360px
+        height: 240px
+        button
+            display: flex
+            align-items: center
+            position: relative
+            top: 192px
+            left: 16px
+            cursor: pointer
+            z-index: 1 
+            border-radius: 4px
+            background: rgba(255, 255, 255, 0.4)
+            backdrop-filter: blur(4px)
+            svg
+                margin-right: 8px
+        .btn-play
+            position: relative
+            padding: 8px 8px 8px 16px        
+        .btn-increase
+            padding: 6px 8px 6px 10px
+    &_image
+        position: absolute    
+        

@@ -19,13 +19,9 @@
         border-right: 2px solid $grey-light
     .header__btn
         margin-left: 16px
-    .city,
-    .phone,
-    .email,
-    .login,
-    .cart
-        display: flex
     .cart 
+        display: flex
+        align-items: center
         padding: 8px
         font-weight: 600
         font-size: 15px
@@ -53,34 +49,6 @@
             transition: all 0.2s
         .cart__icon
             margin-right: 4px
-    .city,
-    .phone,
-    .email,
-    .login
-        &:hover
-            transition: all 0.2s
-            span
-                color: $blue-card__subtitle
-            path
-                fill: $blue-card__subtitle
-                stroke: $blue-card__subtitle
-        &:active
-            transition: all 0.2s
-            span
-                color: $blue-active
-            path
-                fill: $blue-active
-                stroke: $blue-active
-    .city-text,
-    .phone-text,
-    .email-text,
-    .login-text,
-    .cart
-        margin-left: 4px
-        font-weight: 600
-        font-size: 15px
-        line-height: 20px
-        color: $text-black
             
 @media (max-width: 768px)
     .header

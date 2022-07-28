@@ -28,3 +28,12 @@ menuBtn.addEventListener("click", function(){
 menuClose.addEventListener("click", function(){
     menuPopup.classList.remove("popup__active");
 })
+
+new Swiper(".parthners_slider", {
+    loop: true,
+    slidesPerView: 6,
+    spaceBetween: 24,
+    navigation: {
+        nextEl: ".swiper-button-next"
+    },
+});

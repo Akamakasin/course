@@ -1,0 +1,28 @@
+.city,
+.phone,
+.email,
+.login
+    display: flex
+    &:hover
+        transition: all 0.2s
+        span
+            color: $blue-card__subtitle
+        path
+            fill: $blue-card__subtitle
+            stroke: $blue-card__subtitle
+    &:active
+        transition: all 0.2s
+        span
+            color: $blue-active
+        path
+            fill: $blue-active
+            stroke: $blue-active
+.city-text,
+.phone-text,
+.email-text,
+.login-text
+    margin-left: 4px
+    font-weight: 600
+    font-size: 15px
+    line-height: 20px
+    color: $text-black
