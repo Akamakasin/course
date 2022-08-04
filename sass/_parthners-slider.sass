@@ -1,24 +1,31 @@
 .parthners
     padding: 40px 0 56px 0
     position: relative
+    &_slider-prev,
     &_slider-next
-        transform: translateX(75%)
+        position: absolute
+        transform: translateX(-75%)
         z-index: 10
         width: 40px
         height: 40px
+        bottom: 125px
         background-size: 14px 14px
-        background-image: url("/img/next.svg")
+        background-image: url("/img/prev.svg")
         background-color: $white
         background-position: center
         background-repeat: no-repeat
         border: 1px solid $white-slider
         border-radius: 100%
+        cursor: pointer
         &:hover
             box-shadow: -8px 4px 8px rgba(0, 0, 0, 0.16)
         &:active
             box-shadow: -4px 2px 4px rgba(0, 0, 0, 0.24)
         &::after
             display: none
-
-    
+    &_slider-next
+        background-image: url("/img/next.svg")
+        left: 1525px
+    .swiper-button-disabled
+        visibility: hidden
     

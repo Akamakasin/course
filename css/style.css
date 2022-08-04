@@ -1037,27 +1037,37 @@ body {
   padding: 40px 0 56px 0;
   position: relative;
 }
-.parthners_slider-next {
-  transform: translateX(75%);
+.parthners_slider-prev, .parthners_slider-next {
+  position: absolute;
+  transform: translateX(-75%);
   z-index: 10;
   width: 40px;
   height: 40px;
+  bottom: 125px;
   background-size: 14px 14px;
-  background-image: url("/img/next.svg");
+  background-image: url("/img/prev.svg");
   background-color: #ffffff;
   background-position: center;
   background-repeat: no-repeat;
   border: 1px solid #F0F0F0;
   border-radius: 100%;
+  cursor: pointer;
 }
-.parthners_slider-next:hover {
+.parthners_slider-prev:hover, .parthners_slider-next:hover {
   box-shadow: -8px 4px 8px rgba(0, 0, 0, 0.16);
 }
-.parthners_slider-next:active {
+.parthners_slider-prev:active, .parthners_slider-next:active {
   box-shadow: -4px 2px 4px rgba(0, 0, 0, 0.24);
 }
-.parthners_slider-next::after {
+.parthners_slider-prev::after, .parthners_slider-next::after {
   display: none;
+}
+.parthners_slider-next {
+  background-image: url("/img/next.svg");
+  left: 1525px;
+}
+.parthners .swiper-button-disabled {
+  visibility: hidden;
 }
 
 .galery {

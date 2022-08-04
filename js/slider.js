@@ -30,10 +30,12 @@ menuClose.addEventListener("click", function(){
 })
 
 new Swiper(".parthners_slider", {
-    loop: true,
     slidesPerView: 6,
     spaceBetween: 24,
     navigation: {
-        nextEl: ".swiper-button-next"
+        nextEl: ".parthners_slider-next",
+        prevEl: ".parthners_slider-prev",
     },
 });
+
+let next
